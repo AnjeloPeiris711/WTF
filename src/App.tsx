@@ -15,6 +15,7 @@ const App: React.FC = () => {
   if (loading) {
     return <LoadingSpinner />;
   }
+  
   if (error) {
     return (
       <ErrorMessage 
@@ -24,8 +25,9 @@ const App: React.FC = () => {
       />
     );
   }
+
   return (
-    <Layout>
+    <Layout weatherCondition={weatherData?.current?.condition?.text}>
       <SearchBar 
         onSearch={fetchWeather} 
         loading={loading}

@@ -1,12 +1,17 @@
 import React from 'react';
+import {getWeatherBackground} from '../../utils/weatherBackgrounds';
 
 interface LayoutProps {
   children: React.ReactNode;
+  weatherCondition?: string;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout: React.FC<LayoutProps> = ({ children, weatherCondition }) => {
+    const backgroundClass = weatherCondition 
+    ? getWeatherBackground(weatherCondition)
+    : 'bg-gradient-to-br from-black via-gray-900 to-gray-600';
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-600 via-purple-600 to-pink-500 p-4">
+    <div className={`min-h-screen ${backgroundClass} p-4 transition-all duration-1000 ease-in-out`}>
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
