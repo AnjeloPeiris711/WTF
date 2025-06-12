@@ -32,7 +32,7 @@ export const getWeatherBackground = (condition: string): string => {
   if (conditionLower.includes('fog') || 
       conditionLower.includes('mist') || 
       conditionLower.includes('haze')) {
-    return 'bg-gradient-to-br from-gray-300 via-gray-400 to-gray-500 animate-fog';
+    return 'bg-gradient-to-br from-gray-400 via-gray-600 to-gray-500 animate-fog';
   }
   
   // Clear/Sunny conditions with sun rays
