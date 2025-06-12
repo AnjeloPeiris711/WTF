@@ -39,8 +39,8 @@ const WeatherDetails: React.FC<WeatherDetailsProps> = ({ weatherData }) => {
       
       <WeatherCard
         title="UV Index"
-        value={`${weatherData.current.uv} (${uvLevel.level})`}
-        unit=""
+        value={`${weatherData.current.uv}`}
+        unit= {uvLevel.level}
         icon={<Shield className="w-5 h-5 text-white" />}
         color="bg-purple-500/20"
       />

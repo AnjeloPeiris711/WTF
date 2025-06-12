@@ -1,4 +1,3 @@
-// src/components/weather/WeatherCard.tsx
 import React from 'react';
 import { WeatherCardProps } from '../../types/weather';
 

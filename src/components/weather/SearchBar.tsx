@@ -1,4 +1,3 @@
-// src/components/weather/SearchBar.tsx
 import React, { useState } from 'react';
 import { isValidCity } from '../../utils/weatherHelpers';
 

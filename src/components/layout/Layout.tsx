@@ -18,7 +18,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </p>
         </div>
 
-        {/* Main Content */}
         <main>
           {children}
         </main>
@@ -29,7 +28,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <p className="text-white/60 text-sm">
               Weather data provided by{' '}
               <a 
-                href="https://weatherapi.com" 
+                href="http://weatherapi.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-white/80 hover:text-white transition-colors underline"

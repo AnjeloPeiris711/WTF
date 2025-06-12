@@ -1,3 +1,4 @@
+// src/components/weather/WeatherHeader.tsx
 import React from 'react';
 import { WeatherData } from '../../types/weather';
 import { getWeatherIconLarge } from '../../utils/weatherIcons';
