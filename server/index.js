@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 const WEATHER_API_KEY = process.env.WEATHER_API_KEY;
 const cors = require('cors');
 
-const allowedOrigin = 'http://localhost:5173';
+const allowedOrigin = 'wtf-rose-tau.vercel.app';
 
 app.use(express.json());
 
