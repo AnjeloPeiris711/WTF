@@ -1,5 +1,5 @@
 export const API_CONFIG = {
-  BASE_URL:'http://localhost:3000/api/v1/wtf',
+  BASE_URL:'https://wtf-api.vercel.app/',
 };
 
 export const DEFAULT_CITY = 'Colombo';
