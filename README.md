@@ -1,2 +1,0 @@
-# WTF
-What The Forecast
