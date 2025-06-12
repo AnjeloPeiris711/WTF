@@ -30,6 +30,7 @@ export interface WeatherCardProps {
   unit: string;
   icon: React.ReactNode;
   color: string;
+  
 }
 
 export interface UVLevel {

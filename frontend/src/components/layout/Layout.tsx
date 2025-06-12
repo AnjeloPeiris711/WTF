@@ -16,7 +16,7 @@ const Layout: React.FC<LayoutProps> = ({ children, weatherCondition }) => {
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            🌤️ Weather Dashboard
+            🌤️ What The Forecast ?
           </h1>
           <p className="text-white/80 text-lg">
             Real-time weather information for cities worldwide
