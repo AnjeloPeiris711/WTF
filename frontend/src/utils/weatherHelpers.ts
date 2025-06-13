@@ -2,11 +2,11 @@ import { UVLevel } from '../types/weather';
 import { UV_LEVELS } from '../constants';
 
 export const getUVLevel = (uv: number): UVLevel => {
-  if (uv <= UV_LEVELS.LOW.max) return { level: UV_LEVELS.LOW.level, color: '#00E400' };
-  if (uv <= UV_LEVELS.MODERATE.max) return { level: UV_LEVELS.MODERATE.level, color: '#FFFF00' };
-  if (uv <= UV_LEVELS.HIGH.max) return { level: UV_LEVELS.HIGH.level, color: '#FF8C00' };
-  if (uv <= UV_LEVELS.VERY_HIGH.max) return { level: UV_LEVELS.VERY_HIGH.level, color: '#FF0000' };
-  return { level: UV_LEVELS.EXTREME.level, color: '#8B00FF' };
+  if (uv <= UV_LEVELS.LOW.max) return { level: UV_LEVELS.LOW.level};
+  if (uv <= UV_LEVELS.MODERATE.max) return { level: UV_LEVELS.MODERATE.level};
+  if (uv <= UV_LEVELS.HIGH.max) return { level: UV_LEVELS.HIGH.level};
+  if (uv <= UV_LEVELS.VERY_HIGH.max) return { level: UV_LEVELS.VERY_HIGH.level};
+  return { level: UV_LEVELS.EXTREME.level};
 };
 
 export const formatTemperature = (temp: number): string => {
