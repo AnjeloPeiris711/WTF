@@ -35,7 +35,6 @@ export interface WeatherCardProps {
 
 export interface UVLevel {
   level: string;
-  color: string;
 }
 
 export interface WeatherApiError {
